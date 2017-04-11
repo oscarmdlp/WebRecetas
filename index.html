@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="css/misestilos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title> RECETAS </title>
+</head>
+<body>
+    <div id="header-logo" align="center">
+        <img src="imagenes/Logo.jpg" height="150" width="150">
+    </div><br>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuDesaparece"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.html" id="Inicio">Inicio</a></div>
+            <div class="collapse navbar-collapse" id="menuDesaparece">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Primeros<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a data-toggle="tab" href="#sopas"> Sopas</a></li>
+                            <li><a data-toggle="tab" href="#ensaladas"> Ensaladas</a></li>
+                            <li><a data-toggle="tab" href="#cremas"> Cremas</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Segundos<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a data-toggle="tab" href="#carnes"> Carnes</a></li>
+                            <li><a data-toggle="tab" href="#pescados"> Pescados</a></li>
+                            <li><a data-toggle="tab" href="#pasta"> Pasta</a></li>
+                            <li><a data-toggle="tab" href="#arroz"> Arroz</a></li>
+                        </ul>
+                    </li>
+                    <li class="menuHover"><a data-toggle="tab" href="#postres"> Postres</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="menuHover"><a href="#Contacto"><i class="fa fa-envelope" aria-hidden="true"></i> Contacto</a></li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+        <div class="tab-content container-fluid">
+            <div id="sopas"  class="tab-pane fade sopas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1"></div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;">
+                        <h2 class="tituloReceta">Sopas</h2>
+                        <table class="table">
+                            <tr>
+                                <td align="center">
+                                    <a data-toggle="tab" href="#sopaCebolla"><h4 id="linkReceta">Sopa de cebolla</h4></a>
+                                    <img src="imagenes/sopas/sopa_cebolla.jpg" style="width:200px">
+                                </td>
+                                <td align="center">
+                                    <a data-toggle="tab" href="#sopaJamon"><h4 id="linkReceta">Sopa de jamón con fideos</h4></a>
+                                    <img src="imagenes/sopas/sopa_jamon_fideos.jpg" style="width:200px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <a data-toggle="tab" href="#sopaGallina"><h4 id="linkReceta">Sopa de gallina con huevos de codorniz</h4></a>
+                                    <img src="imagenes/sopas/sopa_gallina.jpg" style="width:200px">
+                                </td>
+                                <td align="center">
+                                    <a data-toggle="tab" href="#sopaBuey"><h4 id="linkReceta">Sopa de rabo de buey</h4></a>
+                                    <img src="imagenes/sopas/sopa_rabo_buey.jpg" style="width:200px">
+                                </td>
+                            </tr>
+                    </table>
+                    </div>
+                    <div class="col-md-3 col-xs-1"></div>
+                </div>
+            </div>
+            
+            <div id="sopaCebolla"  class="tab-pane fade sopas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1"></div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;"><br>
+                        <button data-toggle="tab" href="#sopas" id="btnVolver"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Sopas</button>
+                        <h2 class="tituloReceta">Sopa de Cebolla</h2>                                
+                        <center><img id="receta" src="imagenes/sopas/sopa_cebolla.jpg" style="width:200px"></center>
+                        <h4 style="color:#0b9e21;"><b>Ingredientes</b></h4>
+                        <div id="ingredientes">
+                        <ul>
+                           <li>6 cebollas grandes y dulces</li>
+                           <li>30 ml de aceite de oliva extra virgen (2 cucharadas)</li>
+                           <li>60 g de mantequilla</li>
+                           <li>1 diente de ajo</li>
+                           <li>2 litros de caldo de carne</li>
+                           <li>12 rebanadas de pan del tipo baguette</li>
+                           <li>3 cucharadas de harina de trigo</li>
+                           <li>1 cucharadita de azúcar</li>
+                           <li>Sal y pimienta negra recien molida (al gusto)</li>
+                           <li>20 ml de brandy o coñac</li>
+                           <li>100 g de queso rallado suave (tipo Gruyère)</li>                    
+                        </ul>
+                        </div>
+                        <h4 style="color:#0b9e21;"><b>Preparación</b></h4>
+                        <div id="preparacion">
+                        <ol>
+                        <li>Pelamos y cortamos en juliana (a lo largo y en finísimas rodajas) las cebollas dulces. Reservamos en un cuenco.</li>
+                        <li>Elegimos una cazuela grande, calentamos el aceite en el fondo de la cazuela. Añadimos la mantequilla, que es la verdadera base de esta sopa francesa.</li>
+                        <li>Cuando se haya derretido y mezclado con el aceite de oliva introducimos las cebollas y el ajo muy picadito. Añadimos también un poco de sal y pimienta negra. El efecto salado nos ayudará a que las cebollas suden y que se ablanden antes.</li>
+                        <li>Removemos con una cuchara de madera de manera envolvente hasta que la cebolla quede transparente o translúcida, no debe coger color.</li>
+                        <li>Este proceso es lento porque queremos tener la cebolla blandita sin que se queme. Con fuego muy suave tardaremos unos 20-25 minutos.</li>
+                        <li>Podéis tapar o no la cazuela durante la cocción aunque si la tapáis el agua que va soltando el sofrito quedará en la cazuela y evitará que la cebolla tome color tostado.</li>
+                        <li>Si no hemos usado cebollas dulces en este momento podemos agregar una cucharada de azúcar. Aunque debemos tener cuidado de que no caramelice muy rápido para que la cebolla no quede con color.</li>
+                        <li>Espolvoreamos la harina en la cazuela y removemos con cuidado para mezclarla bien. El efecto de la harina con la cebolla y sobre todo la mantequilla se llama Roux, nos ayudará a ligar y espesar la sopa.</li>
+                        <li>Añadimos el brandy y dejamos 1-2 minutos que se evapore.</li>
+                        <li>Introducimos el caldo, de carne o de lo que más nos guste, por ejemplo pollo, pescado o verduras (así le daréis vuestro toque a la sopa). Salpimentamos si es necesario y llevamos a ebullición. Dejamos 15-20 minutos a fuego muy suave.</li>
+                        <li>La sopa tiene harina y si incrementamos la temperatura se irá al fondo de la cazuela. Se pegará pudiendo llegar a fastidiarnos la receta.</li>
+                        <li>Cortamos en rebanadas finas el pan y tostamos ligeramente.</li>
+                        <li>Untamos con un trozo de ajo y colocamos en la superficie de la cazuela o en cuencos individuales con la sopa y las tostadas por encima.</li>
+                        <li>Espolvoreamos con el queso suave que más nos guste.</li>
+                        <li>Metemos al horno precalentado a 200º. Gratinamos a 220º durante 5-6 minutos y servimos inmediatamente bien caliente.</li>
+                        </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-1"></div>
+                </div>
+            </div>
+            
+            <div id="sopaJamon"  class="tab-pane fade sopas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1"></div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;"><br>
+                        <button data-toggle="tab" href="#sopas" id="btnVolver"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Sopas</button>
+                        <h2 class="tituloReceta">Sopa de Jamón con fideos</h2>                                
+                        <center><img id="receta" src="imagenes/sopas/sopa_jamon_fideos.jpg" style="width:200px"></center>
+                        <h4 style="color:#0b9e21;"><b>Ingredientes (4 personas)</b></h4>
+                        <div id="ingredientes">
+                        <ul>
+                           <li>80 gr. de fideos</li>
+                           <li>2 cebolletas</li>
+                           <li>4 zanahorias</li>
+                           <li>1 puerro</li>
+                           <li>1 patata</li>
+                           <li>1 diente de ajo picado</li>
+                           <li>2 huesos de jamón</li>
+                           <li>200 gr. de jamón</li>
+                           <li>2-3 cucharadas de pan rallado</li>
+                           <li>Harina</li>
+                           <li>Agua</li>
+                           <li>Aceite de oliva virgen extra</li>
+                           <li>Sal</li>
+                           <li>Perejil</li>                                           
+                        </ul>
+                        </div>
+                        <h4 style="color:#0b9e21;"><b>Preparación</b></h4>
+                        <div id="preparacion">
+                        <ol>
+                        <li>Pelamos y picamos en trozos grandes las cebolletas, el puerro y 2 zanahorias.</li>
+                        <li>Agrega la patata cascada, los huesos de jamón y abundante agua.</li>
+                        <li>Tapa la olla y cuece todo durante 15 minutos (a partir de que comience a salir el vapor).</li>
+                        <li>Abre la olla y aplasta un poco la patata para que se deshaga un poco. Cuela el caldo y resérvalo.</li>
+                        <li>Pica el jamón muy fino y colócalo en un bol.</li>
+                        <li>Añade el huevo, el ajo picado, el pan rallado y perejil picado y mezcla bien todo.</li>
+                        <li>Forma bolas, pásalas por harina y fríelas en una sartén con aceite. Escúrrelas sobre un plato forrado con papel absorbente para eliminar el exceso de aceite.</li>
+                        <li>Pon el caldo a hervir, agrega los fideos, las bolas de jamón y las otras 2 zanahorias ralladas. Cuece todo durante 3-4 minutos y pon a punto de sal (retira la espuma).</li>
+                        <li>Sirve la sopa de jamón con fideos y decora con una hoja de perejil si lo deseas.</li>
+                        </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-1"></div>
+                </div>
+            </div>
+            
+            <div id="sopaGallina"  class="tab-pane fade sopas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1"></div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;"><br>
+                        <button data-toggle="tab" href="#sopas" id="btnVolver"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Sopas</button>
+                        <h2 class="tituloReceta">Sopa de gallina con huevos de codorniz</h2>                                
+                        <center><img id="receta" src="imagenes/sopas/sopa_jamon_fideos.jpg" style="width:200px"></center>
+                        <h4 style="color:#0b9e21;"><b>Ingredientes (4 personas)</b></h4>
+                        <div id="ingredientes">
+                        <ul>
+                           <li>1/2 gallina</li>
+                           <li>80 gr. de fideos</li>
+                           <li>50 gr. de tapioca</li>
+                           <li>8 rebanadas de pan</li>
+                           <li>1 trozo de hueso de jamón curado</li>
+                           <li>1 hueso de cañada</li>
+                           <li>1/2 kg. de zancarrón</li>
+                           <li>12 huevos de codorniz</li>
+                           <li>2 zanahorias</li>
+                           <li>2 puerros</li>
+                           <li>1 rama de apio</li>
+                           <li>1 diente de ajo</li>
+                           <li>Agua</li>
+                           <li>Aceite de oliva virgen extra</li>
+                           <li>Sal</li>
+                           <li>Pimienta</li>
+                           <li>Perejil picado</li>                                           
+                        </ul>
+                        </div>
+                        <h4 style="color:#0b9e21;"><b>Preparación</b></h4>
+                        <div id="preparacion">
+                        <ol>
+                        <li>Trocea y maja el diente de ajo pelado con un poco de aceite en el mortero y una pizca de sal.</li>
+                        <li>Unta las rebanadas de pan, extiéndelas sobre la placa de horno y tuéstalas. Retira y resérvalas.</li>
+                        <li>Cuece los huevos de codorniz durante 4-5 minutos en una cazuela con agua. Sazona. Refréscalos y pélalos.</li>
+                        <li>Pon un par de cucharadas de aceite en la olla rápida. Agrega la gallina troceada y salpimienta.</li>
+                        <li>Introduce el zancarrón y dora las carnes en la olla.</li>
+                        <li>Pela las verduras, y añádelas. </li>
+                        <li>Añade los huesos y cubre con abundante agua. Cuando empiece a hervir, retira la espuma y pon la tapa de la olla. Cuece todo durante unos 30 minutos.</li>
+                        <li>Cuela el caldo y retira la grasa con un cacillo. Pon a punto de sal.</li>
+                        <li>Pon el caldo a hervir, agrega la tapioca y a los 5 minutos añade los fideos. Deja cocinar 2 minutos más.</li>
+                        <li>Sirve la sopa de gallina y acompáñala con los huevos de codorniz y con las rebanadas de pan tostado. Decora con perejil picado.</li>
+                        </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-1"></div>
+                </div>
+            </div>
+            
+            <div id="sopaBuey"  class="tab-pane fade sopas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1"></div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;"><br>
+                        <button data-toggle="tab" href="#sopas" id="btnVolver"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Sopas</button>
+                        <h2 class="tituloReceta">Sopa de rabo de buey</h2>                                
+                        <center><img id="receta" src="imagenes/sopas/sopa_rabo_buey.jpg" style="width:200px"></center>
+                        <h4 style="color:#0b9e21;"><b>Ingredientes</b></h4>
+                        <div id="ingredientes">
+                        <ul>
+                           <li>600 g de carne de ternera (zancarrón, jarrete, morcillo).</li>
+                           <li>1 puñado de garbanzos</li>
+                           <li>1 trozo de codillo de jamón</li>
+                           <li>1 punta de jamón</li>
+                           <li>1 hueso de rodilla de ternera</li>
+                           <li>3 zanahorias</li>
+                           <li>1 puerro</li>
+                           <li>1 cebolla</li>
+                           <li>3 ramitas de perejil</li>
+                           <li>Agua</li>
+                           <li>Sal</li>
+                           <li>Fideos</li>                                           
+                        </ul>
+                        </div>
+                        <h4 style="color:#0b9e21;"><b>Preparación</b></h4>
+                        <div id="preparacion">
+                        <ol>
+                        <li>La noche anterior ponemos los garbanzos a remojo en agua ligeramente tibia con una pizca de sal.</li>
+                        <li>En otro recipiente ponemos en agua fría el hueso y las puntas de jamón y en otro el hueso de rodilla.</li>
+                        <li>Al día siguiente escurrimos todo y lo colocamos en una cazuela amplia junto a la carne, las zanahorias, el puerro, la cebolla y el perejil limpios.</li>
+                        <li>Cubrimos con agua y ponemos a fuego medio alto para que empiece a hervir.</li>
+                        <li>Una vez hierva el agua echamos los garbanzos, bajamos un poco el fuego y tapamos.</li>
+                        <li>Cada cierto tiempo miraremos el caldo y desespumaremos, para quitar todas las impurezas y que nos resulte un caldo lo más limpio posible.</li>
+                        <li>Cocemos hasta que la carne y los garbanzos estén tiernos, unas dos horas aproximadamente.</li>
+                        <li>Una vez hecho el caldo, retiramos la carne, los huesos y las veduras y colamos el líquido a otra cazuela en la que haremos la sopa.</li>
+                        <li>Hervimos de nuevo, agregamos sal y la pasta que más nos guste, dejamos que se haga y servimos inmadiatamente acompañado si lo deseamos de algunos garbanzos o de carne de la cocción desmenuzada.</li>
+                        </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-1"></div>
+                </div>
+            </div>
+            
+            <div id="ensaladas"  class="tab-pane fade ensaladas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1" style="background-color:green;">hola</div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;">
+                        <h2>Ensaladas</h2>
+                        <table class="table table-bordered">
+                            <tr>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                        </tr>
+                </table>
+                    </div>
+                    <div class="col-md-3 col-xs-1" style="background-color:red;">adios</div>
+                </div>
+            </div>
+            
+            <div id="cremas"  class="tab-pane fade sopas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1" style="background-color:green;">hola</div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;">
+                        <h2>Cremas</h2>
+                        <table class="table table-bordered">
+                            <tr>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                        </tr>
+                </table>
+                    </div>
+                    <div class="col-md-3 col-xs-1" style="background-color:red;">adios</div>
+                </div>
+            </div>
+            
+            <div id="carnes"  class="tab-pane fade sopas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1" style="background-color:green;">hola</div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;">
+                        <h2>Carnes</h2>
+                        <table class="table table-bordered">
+                            <tr>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                        </tr>
+                </table>
+                    </div>
+                    <div class="col-md-3 col-xs-1" style="background-color:red;">adios</div>
+                </div>
+            </div>
+            
+            <div id="pescados"  class="tab-pane fade sopas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1" style="background-color:green;">hola</div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;">
+                        <h2>Pescados</h2>
+                        <table class="table table-bordered">
+                            <tr>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                        </tr>
+                </table>
+                    </div>
+                    <div class="col-md-3 col-xs-1" style="background-color:red;">adios</div>
+                </div>
+            </div>
+            
+            <div id="pasta"  class="tab-pane fade sopas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1" style="background-color:green;">hola</div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;">
+                        <h2>Pasta</h2>
+                        <table class="table table-bordered">
+                            <tr>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                        </tr>
+                </table>
+                    </div>
+                    <div class="col-md-3 col-xs-1" style="background-color:red;">adios</div>
+                </div>
+            </div>
+            
+            <div id="arroz"  class="tab-pane fade sopas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1" style="background-color:green;">hola</div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;">
+                        <h2>Arroz</h2>
+                        <table class="table table-bordered">
+                            <tr>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                        </tr>
+                </table>
+                    </div>
+                    <div class="col-md-3 col-xs-1" style="background-color:red;">adios</div>
+                </div>
+            </div>
+            
+            <div id="postres"  class="tab-pane fade sopas">
+                <div class="row">
+                    <div class="col-md-3 col-xs-1" style="background-color:green;">hola</div>
+                    <div class="col-md-6 col-xs-10 contenido" style="background-color:lavender;">
+                        <h2>Postres</h2>
+                        <table class="table table-bordered">
+                            <tr>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                            <td align="center">
+                                <h4>Sopa de calabaza</h4>
+                                <img src="imagenes/Logo.jpg" style="width:120px">
+                            </td>
+                        </tr>
+                </table>
+                    </div>
+                    <div class="col-md-3 col-xs-1" style="background-color:red;">adios</div>
+                </div>
+            </div>
+                
+        </div>
+    
+            <br>
+            <br>
+            <br>
+            <footer id="Contacto"> </footer>
+        <script src="JS/miapp.js"></script>
+</body>
+
+</html>
